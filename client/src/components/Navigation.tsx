@@ -33,7 +33,7 @@ export default function Navigation() {
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 font-mono font-bold text-lg hover:text-primary transition-colors">
           <span className="text-primary">◆</span>
-          <span>OpenClaw</span>
+          <span>DataSouler</span>
         </a>
 
         {/* Desktop Menu */}

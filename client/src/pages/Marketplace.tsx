@@ -5,7 +5,7 @@ import { Search, Star, Download, Filter } from "lucide-react";
 import { useState } from "react";
 
 /**
- * OpenClaw Marketplace - Skills Showcase
+ * DataSouler Marketplace - Skills Showcase
  * Design: Hacker Cosmos
  * 
  * Features:
@@ -129,7 +129,7 @@ export default function Marketplace() {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-4 font-mono">Skill 市场</h1>
           <p className="text-muted-foreground mb-8">
-            浏览和安装社区创建的 Skills，扩展 OpenClaw 的功能。
+            浏览和安装社区创建的 Skills，扩展 DataSouler 的功能。
           </p>
 
           {/* Search Bar */}

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Calendar, MapPin, Users, ArrowRight } from "lucide-react";
 
 /**
- * OpenClaw Community - Events & Showcase
+ * DataSouler Community - Events & Showcase
  * Design: Hacker Cosmos
  * 
  * Features:
@@ -34,10 +34,10 @@ interface Story {
 const events: Event[] = [
   {
     id: "1",
-    title: "OpenClaw 交流沙龙",
+    title: "DataSouler 交流沙龙",
     date: "2026-03-15",
     location: "上海交通大学",
-    description: "分享 OpenClaw 的部署经验、实战案例和实用 Skills。属于交大人的 Agent 社区！",
+    description: "分享 DataSouler 的部署经验、实战案例和实用 Skills。属于交大人的 Agent 社区！",
     attendees: 150,
     image: "community-showcase"
   },
@@ -46,7 +46,7 @@ const events: Event[] = [
     title: "Skill 开发工作坊",
     date: "2026-03-22",
     location: "线上",
-    description: "学习如何创建自己的 OpenClaw Skills。从零到一的完整指南。",
+    description: "学习如何创建自己的 DataSouler Skills。从零到一的完整指南。",
     attendees: 300,
     image: "community-showcase"
   },
@@ -55,7 +55,7 @@ const events: Event[] = [
     title: "Agent 创新竞赛",
     date: "2026-04-01",
     location: "全国",
-    description: "展示你的 OpenClaw 创意应用。获胜者将获得奖励和社区认可。",
+    description: "展示你的 DataSouler 创意应用。获胜者将获得奖励和社区认可。",
     attendees: 500,
     image: "community-showcase"
   }
@@ -64,17 +64,17 @@ const events: Event[] = [
 const stories: Story[] = [
   {
     id: "1",
-    title: "用 OpenClaw 自动化日常工作",
+    title: "用 DataSouler 自动化日常工作",
     author: "张三",
-    description: "我用 OpenClaw 自动化了 80% 的日常任务，包括邮件管理、日程安排和文件整理。",
+    description: "我用 DataSouler 自动化了 80% 的日常任务，包括邮件管理、日程安排和文件整理。",
     impact: "每周节省 10+ 小时",
     tags: ["automation", "productivity"]
   },
   {
     id: "2",
-    title: "OpenClaw + Telegram 打造个人助手",
+    title: "DataSouler + Telegram 打造个人助手",
     author: "李四",
-    description: "通过 Telegram 与 OpenClaw 交互，在任何地方控制我的电脑和工作流程。",
+    description: "通过 Telegram 与 DataSouler 交互，在任何地方控制我的电脑和工作流程。",
     impact: "真正的移动办公",
     tags: ["telegram", "mobile", "integration"]
   },
@@ -96,7 +96,7 @@ export default function Community() {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-4 font-mono">社区</h1>
           <p className="text-muted-foreground">
-            加入全球开发者社区，分享经验、学习新技能、共同推进 OpenClaw 生态。
+            加入全球开发者社区，分享经验、学习新技能、共同推进 DataSouler 生态。
           </p>
         </div>
       </section>

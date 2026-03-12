@@ -27,7 +27,7 @@ const docSections: DocSection[] = [
     id: "getting-started",
     title: "快速开始",
     icon: <Zap className="w-6 h-6" />,
-    description: "5 分钟内安装并运行 OpenClaw",
+    description: "5 分钟内安装并运行 DataSouler",
     items: [
       "系统要求",
       "安装步骤",
@@ -51,7 +51,7 @@ const docSections: DocSection[] = [
     id: "skills",
     title: "Skill 开发",
     icon: <BookOpen className="w-6 h-6" />,
-    description: "创建自己的 OpenClaw Skills",
+    description: "创建自己的 DataSouler Skills",
     items: [
       "Skill 结构",
       "API 参考",
@@ -64,18 +64,18 @@ const docSections: DocSection[] = [
 const quickStartSteps = [
   {
     step: 1,
-    title: "安装 OpenClaw",
-    code: "npm install -g openclaw"
+    title: "安装 DataSouler",
+    code: "npm install -g datasouler"
   },
   {
     step: 2,
     title: "初始化项目",
-    code: "openclaw init my-assistant"
+    code: "datasouler init my-assistant"
   },
   {
     step: 3,
     title: "启动助手",
-    code: "cd my-assistant && openclaw start"
+    code: "cd my-assistant && datasouler start"
   },
   {
     step: 4,
@@ -94,7 +94,7 @@ export default function Docs() {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-4 font-mono">文档</h1>
           <p className="text-muted-foreground">
-            完整的 OpenClaw 文档、教程和 API 参考。
+            完整的 DataSouler 文档、教程和 API 参考。
           </p>
         </div>
       </section>

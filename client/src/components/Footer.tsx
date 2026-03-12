@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-mono font-bold text-lg mb-4">OpenClaw</h3>
+            <h3 className="font-mono font-bold text-lg mb-4">DataSouler</h3>
             <p className="text-sm text-muted-foreground">
               开源 AI 电脑助手，自动化你的工作流程。
             </p>
@@ -59,7 +59,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Copyright */}
             <p className="text-sm text-muted-foreground">
-              © {currentYear} OpenClaw Community. 保留所有权利。
+              © {currentYear} DataSouler Community. 保留所有权利。
             </p>
 
             {/* Social Links */}
