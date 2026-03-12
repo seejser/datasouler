@@ -23,6 +23,7 @@ export default function Navigation() {
     { label: "灵魂市场", href: "/market" },
     { label: "共生空间", href: "/symbiosis" },
     { label: "安全", href: "/security" },
+    { label: "博客", href: "/blog" },
   ];
 
   const isActive = (href: string) => location === href;
@@ -66,9 +67,11 @@ export default function Navigation() {
               <Moon className="w-5 h-5 text-blue-400" />
             )}
           </button>
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            开始使用
-          </Button>
+          <a href="/blog/getting-started">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              开始使用
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button & Theme Toggle */}
@@ -112,9 +115,11 @@ export default function Navigation() {
               </a>
             ))}
             <div className="flex gap-2 mt-4">
-              <Button className="flex-1 bg-primary hover:bg-primary/90">
-                开始使用
-              </Button>
+              <a href="/blog/getting-started" className="flex-1">
+                <Button className="w-full bg-primary hover:bg-primary/90">
+                  开始使用
+                </Button>
+              </a>
             </div>
           </div>
         </div>

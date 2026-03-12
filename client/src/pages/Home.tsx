@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Zap, Users, Sparkles, Github } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 import LobsterSvg from "@/components/LobsterSvg";
 
 /**
@@ -75,19 +76,23 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground border border-primary/50 shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105"
-            >
-              开始驯养龙虾 <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              className="border-secondary-foreground/50 hover:bg-secondary/20 transition-all duration-300 transform hover:scale-105"
-            >
-              <Github className="mr-2 w-5 h-5" /> GitHub
-            </Button>
+            <Link href="/blog/getting-started">
+              <Button 
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground border border-primary/50 shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105"
+              >
+                开始驯养龙虾 <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            <a href="https://github.com/seejser/datasouler" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-secondary-foreground/50 hover:bg-secondary/20 transition-all duration-300 transform hover:scale-105"
+              >
+                <Github className="mr-2 w-5 h-5" /> GitHub
+              </Button>
+            </a>
           </div>
 
           {/* Stats */}
@@ -208,9 +213,11 @@ export default function Home() {
           <p className="text-muted-foreground mb-8 text-lg">
             加入 DataSouler 社区，与数千只数字龙虾一起探索 AI 的无限可能
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            立即开始 <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+          <Link href="/blog/getting-started">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              立即开始 <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

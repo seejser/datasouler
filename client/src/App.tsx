@@ -15,6 +15,8 @@ import Workshop from "./pages/Workshop";
 import Market from "./pages/Market";
 import Symbiosis from "./pages/Symbiosis";
 import Security from "./pages/Security";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 
 function Router() {
@@ -29,17 +31,14 @@ function Router() {
       <Route path="/market" component={Market} />
       <Route path="/symbiosis" component={Symbiosis} />
       <Route path="/security" component={Security} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
 }
-
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 function App() {
   return (
