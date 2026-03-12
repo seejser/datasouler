@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Zap, Users, Sparkles, Github } from "lucide-react";
 import { useState } from "react";
+import LobsterSvg from "@/components/LobsterSvg";
 
 /**
  * DataSouler Community Home
@@ -53,19 +54,9 @@ export default function Home() {
         />
         
         <div className="relative z-10 text-center max-w-4xl">
-          {/* Glowing Lobster Logo */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative w-40 h-40 group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary-foreground to-primary rounded-full opacity-20 blur-2xl group-hover:opacity-40 transition-opacity" />
-              <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663332236731/W9GFumZCwHZxSn6p9pLVte/glowing-lobster-logo-WkDkuKgzaciubF7TjpPwSS.webp"
-                alt="DataSouler Lobster"
-                className="w-full h-full object-contain drop-shadow-lg animate-pulse relative z-10"
-                style={{
-                  filter: 'drop-shadow(0 0 20px #ff1744) drop-shadow(0 0 40px #ff1744)',
-                }}
-              />
-            </div>
+          {/* OpenClaw SVG Animated Lobster with Soul */}
+          <div className="mb-8">
+            <LobsterSvg size={160} showSoul={true} />
           </div>
 
           {/* Main Title */}
