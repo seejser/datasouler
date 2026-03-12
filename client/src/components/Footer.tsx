@@ -1,4 +1,5 @@
 import { Github, Twitter, Mail } from "lucide-react";
+import Logo from "@/components/Logo";
 
 /**
  * Footer Component
@@ -14,7 +15,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-mono font-bold text-lg mb-4">DataSouler</h3>
+            <div className="mb-4">
+              <Logo variant="full" size={28} animated={false} />
+            </div>
             <p className="text-sm text-muted-foreground">
               开源 AI 电脑助手，自动化你的工作流程。
             </p>

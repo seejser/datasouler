@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
+import Logo from "@/components/Logo";
 
 /**
  * Navigation Component
@@ -32,9 +33,8 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 border-b border-border/50 bg-background/95 backdrop-blur">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 font-mono font-bold text-lg hover:text-primary transition-colors">
-          <span className="text-primary">◆</span>
-          <span>DataSouler</span>
+        <a href="/" className="hover:opacity-80 transition-opacity">
+          <Logo variant="full" size={32} animated={true} />
         </a>
 
         {/* Desktop Menu */}
