@@ -42,49 +42,49 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* ===== Light Mode (Default) ===== */
 :root {
-  /* Hacker Cosmos Design System */
-  --primary: #ff1744; /* Neon Red */
-  --primary-foreground: #e0e0e0; /* Light Gray */
-  --sidebar-primary: #ff1744;
-  --sidebar-primary-foreground: #e0e0e0;
-  --chart-1: #00e5ff; /* Neon Cyan */
-  --chart-2: #ff1744; /* Neon Red */
-  --chart-3: #00ff00; /* Neon Green */
-  --chart-4: #ffaa00; /* Neon Orange */
-  --chart-5: #ff1744;
+  --primary: #d32f2f;
+  --primary-foreground: #ffffff;
+  --sidebar-primary: #d32f2f;
+  --sidebar-primary-foreground: #ffffff;
+  --chart-1: #0277bd;
+  --chart-2: #d32f2f;
+  --chart-3: #388e3c;
+  --chart-4: #f57c00;
+  --chart-5: #d32f2f;
   --radius: 0.5rem;
-  --background: #0a0e27; /* Deep Blue-Black */
-  --foreground: #e0e0e0; /* Light Gray */
-  --card: #1a1f3a; /* Slightly lighter dark */
-  --card-foreground: #e0e0e0;
-  --popover: #1a1f3a;
-  --popover-foreground: #e0e0e0;
-  --secondary: #2a2f4a; /* Dark secondary */
-  --secondary-foreground: #00e5ff;
-  --muted: #3a3f5a; /* Muted dark */
-  --muted-foreground: #a0a0a0;
-  --accent: #ff1744; /* Neon Red accent */
-  --accent-foreground: #0a0e27;
-  --destructive: #ff1744;
-  --destructive-foreground: #0a0e27;
-  --border: #2a3f5f; /* Dark border with blue tint */
-  --input: #1a1f3a;
-  --ring: #00e5ff;
-  --sidebar: #0a0e27;
-  --sidebar-foreground: #e0e0e0;
-  --sidebar-accent: #ff1744;
-  --sidebar-accent-foreground: #0a0e27;
-  --sidebar-border: #2a3f5f;
-  --sidebar-ring: #00e5ff;
+  --background: #f8f9fa;
+  --foreground: #1a1a2e;
+  --card: #ffffff;
+  --card-foreground: #1a1a2e;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a2e;
+  --secondary: #f0f0f5;
+  --secondary-foreground: #0277bd;
+  --muted: #e8e8f0;
+  --muted-foreground: #555566;
+  --accent: #d32f2f;
+  --accent-foreground: #ffffff;
+  --destructive: #d32f2f;
+  --destructive-foreground: #ffffff;
+  --border: #d8d8e0;
+  --input: #ffffff;
+  --ring: #0277bd;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a2e;
+  --sidebar-accent: #d32f2f;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #d8d8e0;
+  --sidebar-ring: #0277bd;
 }
 
+/* ===== Dark Mode (Hacker Cosmos) ===== */
 .dark {
-  /* Hacker Cosmos - Dark Mode (Default) */
   --primary: #ff1744;
-  --primary-foreground: #0a0e27;
+  --primary-foreground: #e0e0e0;
   --sidebar-primary: #ff1744;
-  --sidebar-primary-foreground: #0a0e27;
+  --sidebar-primary-foreground: #e0e0e0;
   --background: #0a0e27;
   --foreground: #e0e0e0;
   --card: #1a1f3a;
@@ -115,42 +115,6 @@
   --sidebar-ring: #00e5ff;
 }
 
-/* Light Mode */
-:not(.dark) {
-  --primary: #d32f2f;
-  --primary-foreground: #ffffff;
-  --sidebar-primary: #d32f2f;
-  --sidebar-primary-foreground: #ffffff;
-  --background: #f5f5f5;
-  --foreground: #212121;
-  --card: #ffffff;
-  --card-foreground: #212121;
-  --popover: #ffffff;
-  --popover-foreground: #212121;
-  --secondary: #f0f0f0;
-  --secondary-foreground: #0277bd;
-  --muted: #e0e0e0;
-  --muted-foreground: #666666;
-  --accent: #d32f2f;
-  --accent-foreground: #ffffff;
-  --destructive: #d32f2f;
-  --destructive-foreground: #ffffff;
-  --border: #e0e0e0;
-  --input: #ffffff;
-  --ring: #0277bd;
-  --chart-1: #0277bd;
-  --chart-2: #d32f2f;
-  --chart-3: #388e3c;
-  --chart-4: #f57c00;
-  --chart-5: #d32f2f;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #212121;
-  --sidebar-accent: #d32f2f;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #e0e0e0;
-  --sidebar-ring: #0277bd;
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -179,24 +143,11 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -207,16 +158,16 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }

@@ -27,7 +27,7 @@ export default function Home() {
           return (
             <div
               key={i}
-              className="absolute rounded-full bg-white"
+              className="absolute rounded-full bg-foreground/30 dark:bg-white"
               style={{
                 width: size + "px",
                 height: size + "px",
