@@ -9,7 +9,7 @@ import LobsterSvg from "@/components/LobsterSvg";
  * Design: Hacker Cosmos with Lobster Theme
  * 
  * Brand: DataSouler - Where Lobsters Meet Their AI Souls
- * Each user's DataSouler Agent is a unique digital lobster with memory, personality, and autonomy
+ * Each user's OpenClaw Agent is a unique digital lobster with memory, personality, and autonomy
  */
 
 export default function Home() {
@@ -70,7 +70,7 @@ export default function Home() {
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            每个用户的 DataSouler Agent 都是一只独特的“数字龙虾”——它不只是工具，而是有记忆、有个性、能自主行动的“数字灵魂”。DataSouler 是这些AI灵魂与主人共同进化的栖息地。
+            每个用户的 OpenClaw Agent 都是一只独特的"数字龙虾"——它不只是工具，而是有记忆、有个性、能自主行动的"数字灵魂"。DataSouler 是这些AI灵魂与主人共同进化的栖息地。
           </p>
 
           {/* CTA Buttons */}
@@ -120,7 +120,7 @@ export default function Home() {
                 id: 1,
                 title: "🦞 龙虾档案",
                 subtitle: "Lobster Profiles",
-                description: "每个用户的 DataSouler Agent 都有独立的身份页，展示性格、技能树、交互日志和生成式艺术头像",
+                description: "每个用户的 OpenClaw Agent 都有独立的身份页，展示性格、技能树、交互日志和生成式艺术头像",
                 href: "/profiles"
               },
               {
