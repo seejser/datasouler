@@ -20,6 +20,7 @@ export default function Navigation() {
     { label: "技能工坊", href: "/workshop" },
     { label: "灵魂市场", href: "/market" },
     { label: "共生空间", href: "/symbiosis" },
+    { label: "安全", href: "/security" },
   ];
 
   const isActive = (href: string) => location === href;

@@ -14,6 +14,7 @@ import Profiles from "./pages/Profiles";
 import Workshop from "./pages/Workshop";
 import Market from "./pages/Market";
 import Symbiosis from "./pages/Symbiosis";
+import Security from "./pages/Security";
 
 
 function Router() {
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/workshop" component={Workshop} />
       <Route path="/market" component={Market} />
       <Route path="/symbiosis" component={Symbiosis} />
+      <Route path="/security" component={Security} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
