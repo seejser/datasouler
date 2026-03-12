@@ -242,9 +242,11 @@ export default function Community() {
             <Button className="bg-primary hover:bg-primary/90">
               加入 Discord <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
-            <Button variant="outline" className="border-border/50">
-              查看 GitHub
-            </Button>
+            <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-border/50">
+                查看 GitHub
+              </Button>
+            </a>
           </div>
         </div>
       </section>

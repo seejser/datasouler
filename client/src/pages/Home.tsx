@@ -84,7 +84,7 @@ export default function Home() {
                 开始驯养龙虾 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
-            <a href="https://github.com/seejser/datasouler" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg"
                 variant="outline"

@@ -36,7 +36,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4">社区</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Discord</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">GitHub</a></li>
+              <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">论坛</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">博客</a></li>
             </ul>
@@ -64,7 +64,7 @@ export default function Footer() {
 
             {/* Social Links */}
             <div className="flex items-center gap-4">
-              <a href="#" className="p-2 hover:bg-secondary/30 rounded transition-colors">
+              <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-secondary/30 rounded transition-colors">
                 <Github className="w-5 h-5 text-muted-foreground hover:text-primary" />
               </a>
               <a href="#" className="p-2 hover:bg-secondary/30 rounded transition-colors">
