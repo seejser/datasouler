@@ -10,6 +10,10 @@ import Home from "./pages/Home";
 import Marketplace from "./pages/Marketplace";
 import Community from "./pages/Community";
 import Docs from "./pages/Docs";
+import Profiles from "./pages/Profiles";
+import Workshop from "./pages/Workshop";
+import Market from "./pages/Market";
+import Symbiosis from "./pages/Symbiosis";
 
 
 function Router() {
@@ -19,6 +23,10 @@ function Router() {
       <Route path="/marketplace" component={Marketplace} />
       <Route path="/community" component={Community} />
       <Route path="/docs" component={Docs} />
+      <Route path="/profiles" component={Profiles} />
+      <Route path="/workshop" component={Workshop} />
+      <Route path="/market" component={Market} />
+      <Route path="/symbiosis" component={Symbiosis} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

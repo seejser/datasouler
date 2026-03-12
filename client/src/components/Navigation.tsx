@@ -16,9 +16,10 @@ export default function Navigation() {
 
   const navItems = [
     { label: "首页", href: "/" },
-    { label: "Skill 市场", href: "/marketplace" },
-    { label: "社区", href: "/community" },
-    { label: "文档", href: "/docs" },
+    { label: "龙虾档案", href: "/profiles" },
+    { label: "技能工坊", href: "/workshop" },
+    { label: "灵魂市场", href: "/market" },
+    { label: "共生空间", href: "/symbiosis" },
   ];
 
   const isActive = (href: string) => location === href;
@@ -33,12 +34,12 @@ export default function Navigation() {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4 lg:gap-8 overflow-x-auto">
           {navItems.map(item => (
             <a
               key={item.href}
               href={item.href}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-sm font-medium whitespace-nowrap transition-colors ${
                 isActive(item.href)
                   ? "text-primary border-b-2 border-primary pb-1"
                   : "text-foreground hover:text-primary"
@@ -67,15 +68,15 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-border/50 bg-card/50 backdrop-blur">
-          <div className="px-4 py-4 space-y-3">
+        <div className="md:hidden border-t border-border/50 bg-card/50 backdrop-blur max-h-96 overflow-y-auto">
+          <div className="px-4 py-4 space-y-2">
             {navItems.map(item => (
               <a
                 key={item.href}
                 href={item.href}
-                className={`block px-4 py-2 rounded transition-colors ${
+                className={`block px-4 py-3 rounded transition-colors text-sm ${
                   isActive(item.href)
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-primary text-primary-foreground font-bold"
                     : "text-foreground hover:bg-secondary/30"
                 }`}
                 onClick={() => setIsOpen(false)}
@@ -83,7 +84,7 @@ export default function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full bg-primary hover:bg-primary/90">
+            <Button className="w-full bg-primary hover:bg-primary/90 mt-4">
               开始使用
             </Button>
           </div>
